@@ -1,25 +1,14 @@
 doctype html
 html
   head
-    link(href="js/jkanban.min.css" rel="stylesheet")/
-    script(src="js/jkanban.min.js")
     script(src='https://docs.getgrist.com/grist-plugin-api.js')
     script(src="js/markdown-it.min.js")
     script(src='js/rapydscript.js')
     script(src='js/jquery.js')
     script(src='js/load-pyj.js' defer)
-    style#stl
-    style.
-      .kanban-item p {
-        margin:0;
-        padding:0;
-      }
-      .kanban-item {font-size: 80%;}
-      .kanban-item h1 {font-size: 130%;}
-      .kanban-item h2 {font-size: 120%;}
-      .kanban-item h3 {font-size: 110%;}
 
   body
-    #kanban
-    script const cfg = {data: !{JSON.stringify(cfg.data)}, categories: !{JSON.stringify(cfg.categories)}}
+  
+  footer
+    script var md = cfg.data.md
     script(type='pyj')!= getcode("py")
