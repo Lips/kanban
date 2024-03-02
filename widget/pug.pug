@@ -7,8 +7,8 @@ html
     script(src='js/jquery.js')
     script(src='js/load-pyj.js' defer)
 
-  body Please select a record.
+  body
   
   footer
-    script var md = "!{cfg.options.md}"
+    script var md = cfg.data.md
     script(type='pyj')!= getcode("py")

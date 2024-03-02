@@ -14,8 +14,8 @@ html(lang='en' style='height: 100%; margin: 0px; padding: 0px')
     script.
       var pug = require('pug');
     script(src="js/toml.js" defer)
-    script(src="js/rapydscript.js")
-    script(src="api.js" defer)
+    script(src="js/rapydscript.js" defer)
+    script(src="js/load-pyj.js" defer)
 
     style.
       body {height: 100%; display: flex; flex-direction: column; margin: 0px; overflow: hidden;}
@@ -42,3 +42,4 @@ html(lang='en' style='height: 100%; margin: 0px; padding: 0px')
     #editors
     #widget
       div
+    script(src="api.pyj" type="pyj")
