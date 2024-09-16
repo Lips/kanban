@@ -3,3 +3,4 @@ node_modules/
 server.com
 package.json
 package-lock.json
+*.swp
